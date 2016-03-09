@@ -1,8 +1,9 @@
-footer {
-	clear: both;
-	.container {
+header {
+	margin-top: 3rem;
+	.navContainer {
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		.logo {
 			width: 4%;
 		}

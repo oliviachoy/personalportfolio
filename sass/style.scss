@@ -9,7 +9,10 @@
 
 @import 'normalize';
 @import 'typography';
+@import 'header';
 @import 'navigation';
+@import 'hero';
+@import 'about';
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
@@ -19,6 +22,9 @@ Default Styling
 ====================================
 */
 
+html {
+	font-size: 62.5%;
+}
 img {
 	max-width: 100%;
 }
@@ -33,13 +39,16 @@ body {
 }
 
 .content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
+	width: 80%;
+	margin: 0 auto;
 }
 
 .full {
 	width: 100%;
+}
+
+.logo {
+	width: 5%;
 }
 
 
