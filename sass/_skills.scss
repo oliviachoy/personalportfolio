@@ -3,12 +3,25 @@
 	h2 {
 		font-size: 3rem;
 	}
-	.skillIcons {
-		i {
-			font-size: 3rem;
+	.skillsContainer {
+		display: flex;
+		p {
+			width: 50%;
 		}
-	}
-	p {
-		font-size: 2rem;
+		.skillIcons {
+			width: 50%;
+		.icons {
+			width: 50%;
+			display: flex;
+			align-items: center;
+			i {
+				font-size: 3rem;
+			}
+			p {
+				font-size: 2rem;
+				width: 50%;
+				}
+			}
+		}
 	}
 }

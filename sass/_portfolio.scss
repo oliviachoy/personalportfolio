@@ -1,4 +1,33 @@
 .portfolioSection {
-	transform: skewY(-8deg);
+	transform: skewY(-13deg);
 	background-color: $tealcolor;
+	position: relative;
+	.portfolioContent {
+		transform: skewY(13deg);
+		display: flex;
+		flex-direction: column;
+		padding: 12rem 0;
+		.portfolioDescription {
+			display: flex;
+			padding: 4rem 0;
+			justify-content: center;
+			img{
+				width: 30%;
+				}
+			.portfolioInfo {
+				width: 50%;
+			}
+		}
+	}
+}
+
+#right-triangle {
+     width: 0;
+     height: 0;
+     position: absolute;
+     bottom: -14rem;
+     left: -3px;
+     border-left: 667px solid #fff;
+     border-top: 111px solid transparent;
+     border-bottom: 149px solid transparent;
 }

@@ -1,0 +1,11 @@
+.contact {
+	position: relative;
+	h2 {
+		font-size: 3rem;
+	}
+	.contactContainer {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+	}
+}
