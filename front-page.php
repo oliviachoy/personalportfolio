@@ -2,13 +2,9 @@
 
 <div class="main">
   <div class="container">
-	<section class="hero" style="background-image: url(the_field('hero_image'));">
-
-	  	<h1>
-	      <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-	        <?php bloginfo( 'name' ); ?>
-	      </a>
-	    </h1>
+	<section class="hero" style="background-image: url('<?php the_field('hero_image'); ?>');">
+	     <h1><?php bloginfo( 'name' ); ?></h1>
+	     <h2><h2><?php bloginfo('description'); ?></h2></h2>
 	</section>
 
     <div class="content">
@@ -20,8 +16,8 @@
       	<div id="left-triangle"></div>
 	        	<h2><?php the_title(); ?></h2>
 	      	<div class="about">
-	        	<img src="<?php the_post_thumbnail_url('full')?>" alt="">
        			<?php the_content(); ?>
+	        	<img src="<?php the_post_thumbnail_url('full')?>" alt="">
 	        </div>
        	 </div>
 		</section>
@@ -33,7 +29,6 @@
 			<div class="skillIcons">
 				<?php if( have_rows('skill-icons')): ?>
 				<?php while( have_rows('skill-icons')): the_row(); ?>
-				<!-- <?php the_sub_field('icon');?>  -->
 				<i class="fa <?php the_sub_field('icon')?>"></i>
 				<p class="caption">
 					<?php get_sub_field('caption')?>
@@ -46,7 +41,7 @@
 			</p>
 		</section>
 		
-		<section>
+		<section class="portfolioSection">
 			<?php $portfolioQuery = new WP_Query(array(
 			  'posts_per_page' => 2,
 			  'post_type' => 'portfolio' 

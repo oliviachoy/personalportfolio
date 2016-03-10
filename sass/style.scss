@@ -6,6 +6,7 @@
 * Author: HackerYou
 * Author URI: http://hackeryou.com
 */
+$tealcolor: #0DBDB7;
 
 @import 'normalize';
 @import 'typography';
@@ -13,6 +14,8 @@
 @import 'navigation';
 @import 'hero';
 @import 'about';
+@import 'skills';
+@import 'portfolio';
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
@@ -39,7 +42,6 @@ body {
 }
 
 .content {
-	width: 80%;
 	margin: 0 auto;
 }
 

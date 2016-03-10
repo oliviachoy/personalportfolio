@@ -6,9 +6,7 @@
 
       <?php if ( have_posts() ) the_post(); ?>
 
-      <h1>
-    
-      </h1>
+     
 
       <?php
     	/* Since we called the_post() above, we need to
