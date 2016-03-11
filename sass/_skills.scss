@@ -1,10 +1,17 @@
 .skills {
 	padding: 8rem 0;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	z-index: -1;
+	// -webkit-filter: blur(5px);
 	h2 {
 		font-size: 3rem;
+		position: relative;
 	}
 	.skillsContainer {
 		display: flex;
+		position: relative;
 		p {
 			width: 50%;
 		}
@@ -24,4 +31,13 @@
 			}
 		}
 	}
+}
+
+.overlay {
+	position: absolute;
+	top:0;
+	bottom:0;
+	right: 0;
+	left: 0;
+	background-color: rgba(255,255,255,0.6);
 }

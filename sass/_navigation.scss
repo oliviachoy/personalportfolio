@@ -2,7 +2,6 @@ ul.menu {
 	margin: 0;
 	padding: 0;
 	display: flex;
-	justify-content: center;
 	li {
 		display: inline;
 		margin-right: 10px;
@@ -10,6 +9,9 @@ ul.menu {
 			padding: 10px;
 			color: #000;
 			font-size: 2rem;
+			text-transform: uppercase;
+			font-family: $font;
+			letter-spacing: .2rem;
 		}
 	}
 }

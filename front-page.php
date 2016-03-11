@@ -3,6 +3,8 @@
 <div class="main">
   <div class="container">
 	<section class="hero" style="background-image: url('<?php the_field('hero_image'); ?>');">
+		<div class="logo"><img src="<?php the_field('logo', 'option'); ?>" alt="">
+		</div>
 	     <h1><?php bloginfo( 'name' ); ?></h1>
 	     <h2><h2><?php bloginfo('description'); ?></h2></h2>
 	</section>
@@ -23,7 +25,8 @@
 		</section>
 
 
-		<section class="skills">
+		<section class="skills" style="background-image: url('<?php the_field('skills__image');?>');">
+			<div class="overlay"></div>
 			<h2><?php the_field('skills_title');?></h2>
 			<div class="skillsContainer">
 				<div class="skillIcons">
@@ -44,6 +47,7 @@
 		
 		<section class="portfolioSection">
 			<div class="portfolioContent">
+			<h2><?php the_field('port_title');?></h2>
 				<?php $portfolioQuery = new WP_Query(array(
 				  'posts_per_page' => 2,
 				  'post_type' => 'portfolio' 
@@ -73,10 +77,13 @@
 				<div class="contactIcons">
 				<?php if( have_rows('contact_icons')): ?>
 					<?php while( have_rows('contact_icons')): the_row(); ?>
-						<?php the_sub_field('icon') ?>
-						<p class="caption">
-							<?php the_sub_field('caption')?>
+						<div class="contactCaption">
+						<p><?php the_sub_field('info') ?></p>
+						<p>
+							<?php the_sub_field('icon') ?> 
+							<a href="<?php the_sub_field('contact_link') ?>"><?php the_sub_field('caption')?></a>
 						</p>
+						</div>
 					<?php endwhile; ?>
 				<?php endif; ?>
 				</div>

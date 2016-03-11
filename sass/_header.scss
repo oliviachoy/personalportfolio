@@ -3,7 +3,8 @@ header {
 	.navContainer {
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-between;
+		padding-bottom: 2rem;
 		.logo {
 			width: 4%;
 		}

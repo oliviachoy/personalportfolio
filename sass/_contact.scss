@@ -1,11 +1,21 @@
 .contact {
 	position: relative;
+	padding: 9rem 0;
 	h2 {
 		font-size: 3rem;
+		padding: 2rem 0;
 	}
 	.contactContainer {
 		display: flex;
 		justify-content: center;
 		flex-direction: row;
+		.contactIcons {
+			display: flex;
+			width: 100%;
+			justify-content: space-around;
+			.contactCaption {
+				font-size: 1.6rem;
+			}
+		}
 	}
 }
