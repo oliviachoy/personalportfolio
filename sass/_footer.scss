@@ -1,7 +1,7 @@
 footer {
 	clear: both;
+	position: relative;
 	.container {
-		border-top: 1px solid black;
 		padding: 2rem 0;
 		display: flex;
 		align-items: center;
@@ -10,4 +10,24 @@ footer {
 			width: 4%;
 		}
 	}
+}
+
+#triangle-bottomleft { 
+   width: 0; 
+   height: 0; 
+   left: 0;
+   bottom: 0;
+   position: absolute;
+   border-bottom: 100px solid $tealcolor; 
+   border-right: 800px solid transparent; 
+}
+
+#triangle-bottomright { 
+   width: 0; 
+   height: 0; 
+   right: 0;
+   bottom: 0;
+   position: absolute;
+   border-bottom: 100px solid $tealcolor; 
+   border-left: 800px solid transparent; 
 }

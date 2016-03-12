@@ -1,15 +1,16 @@
 <?php get_header();  ?>
 
 <div class="main">
-  <div class="container">
+ <div class="container">
 	<section class="hero" style="background-image: url('<?php the_field('hero_image'); ?>');">
 		<div class="logo"><img src="<?php the_field('logo', 'option'); ?>" alt="">
 		</div>
+
+    <div class="content">
 	     <h1><?php bloginfo( 'name' ); ?></h1>
 	     <h2><h2><?php bloginfo('description'); ?></h2></h2>
 	</section>
 
-    <div class="content">
       <?php // Start the loop ?>
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
@@ -24,8 +25,7 @@
        	 </div>
 		</section>
 
-
-		<section class="skills" style="background-image: url('<?php the_field('skills__image');?>');">
+		<section class="skills">
 			<div class="overlay"></div>
 			<h2><?php the_field('skills_title');?></h2>
 			<div class="skillsContainer">
@@ -41,7 +41,7 @@
 					<?php endwhile; ?>
 				<?php endif; ?>
 				</div>
-				<?php the_field('service_description');?>
+				<p><?php the_field('service_description');?></p>
 			</div>
 		</section>
 		
@@ -74,6 +74,7 @@
 		<section class="contact">
 			<h2><?php the_field('contact_title') ?></h2>
 			<div class="contactContainer">
+			<!-- 	<p>Always looking to learn more <span class="rott"></span></p> -->
 				<div class="contactIcons">
 				<?php if( have_rows('contact_icons')): ?>
 					<?php while( have_rows('contact_icons')): the_row(); ?>
@@ -91,8 +92,7 @@
 		</section>
 
       <?php endwhile; // end the loop?>
+			<?php get_footer(); ?>
     </div> <!-- /,content -->
-  </div> <!-- /.container -->
 </div> <!-- /.main -->
 
-<?php get_footer(); ?>

@@ -1,32 +1,37 @@
 .skills {
-	padding: 8rem 0;
+	padding: 4rem 0 8rem 0;
 	background-attachment: fixed;
 	background-size: cover;
 	position: relative;
 	z-index: -1;
-	// -webkit-filter: blur(5px);
+
 	h2 {
 		font-size: 3rem;
 		position: relative;
+		padding: 2rem;
 	}
+
 	.skillsContainer {
-		display: flex;
 		position: relative;
 		p {
 			width: 50%;
+			font-size: 1.5rem;
+			padding-left: 2rem;
 		}
 		.skillIcons {
-			width: 50%;
+			width: 80%;
+			display: flex;
 		.icons {
 			width: 50%;
 			display: flex;
+			flex-direction: column;
 			align-items: center;
 			i {
 				font-size: 3rem;
 			}
 			p {
 				font-size: 2rem;
-				width: 50%;
+				text-align: center;
 				}
 			}
 		}
@@ -40,4 +45,21 @@
 	right: 0;
 	left: 0;
 	background-color: rgba(255,255,255,0.6);
+}
+
+
+#triangle-topleft { 
+   width: 0; 
+   height: 0; 
+   position: absolute;
+   border-top: 100px solid blue; 
+   border-right: 100px solid transparent; 
+}
+
+#right-triangle {
+   width: 0;
+   height: 0;
+   border-left: 100px solid blue;
+   border-top: 50px solid transparent;
+   border-bottom: 50px solid transparent;
 }

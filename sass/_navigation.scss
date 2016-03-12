@@ -2,6 +2,7 @@ ul.menu {
 	margin: 0;
 	padding: 0;
 	display: flex;
+	justify-content: space-between;
 	li {
 		display: inline;
 		margin-right: 10px;

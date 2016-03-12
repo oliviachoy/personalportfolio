@@ -15,9 +15,6 @@
 
 <header>
   <div class="container navContainer">
-    
-    <div class="logo"><img src="<?php the_field('logo', 'option'); ?>" alt="">
-    </div>
 
     <?php wp_nav_menu( array(
       'container' => false,

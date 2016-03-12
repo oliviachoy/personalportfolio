@@ -1,6 +1,7 @@
 <footer>
+	<div id="triangle-bottomleft"></div>
+	<div id="triangle-bottomright"></div>
   <div class="container">
-  	<div class="logo"><img src="<?php the_field('logo', 'option'); ?>" alt=""></div>
     <p>&copy; Olivia Choy <?php echo date('Y'); ?></p>
   </div>
 </footer>

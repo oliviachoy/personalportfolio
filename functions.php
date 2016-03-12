@@ -287,3 +287,5 @@ function hackeryou_get_thumbnail_url($post) {
 	$imageURL = wp_get_attachment_url($imageID);
 	return $imageURL;
 }
+
+add_filter( 'show_admin_bar', '__return_false' );

@@ -19,28 +19,19 @@
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
 		<h2 class="entry-title">
-	        <a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
-	          <?php the_title(); ?>
-	        </a>
+	          <p><?php the_title(); ?></p>
     	</h2>
 
     	<section class="entry-content">
 				<img src="<?php echo hackeryou_get_thumbnail_url($post) ?>" alt="">
-        		<?php the_excerpt(); ?>
+        		<?php the_content(); ?>
 				<?php wp_link_pages( array(
 	          'before' => '<div class="page-link"> Pages:',
 	          'after' => '</div>'
 	        )); ?>
 		</section><!-- .entry-content -->
 
-<!-- 		<section class="entry-content">
-			<?php the_content('Continue reading <span class="meta-nav">&rarr;</span>'); ?>
-			<img src="<?php echo wp_get_attachment_url($post) ?>" alt="">
-			<?php wp_link_pages( array(
-          'before' => '<div class="page-link"> Pages:',
-          'after' => '</div>'
-        )); ?>
-		</section><!-- .entry-content --> -->
+<!-- 
 
 
 		<footer>

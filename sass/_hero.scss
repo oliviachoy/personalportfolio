@@ -2,16 +2,17 @@
 	height: 85vh;
 	background-size: cover; 
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 	display: flex;
 	align-items: center;
     justify-content: center;
     flex-direction: column;
-    // -webkit-filter: blur(1px);
 	h1 {
 		font-size: 7rem;
 		text-transform: uppercase;
 		letter-spacing: 1rem;
 		color: #fff;
 		margin: 0;
+		font-family: $font;
 	}
 }
