@@ -289,3 +289,4 @@ function hackeryou_get_thumbnail_url($post) {
 }
 
 add_filter( 'show_admin_bar', '__return_false' );
+

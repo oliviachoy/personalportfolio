@@ -17,7 +17,7 @@
 			display: flex;
 			padding: 4rem 0;
 			justify-content: center;
-			img{
+			.portImage{
 				width: 40%;
 				}
 			.portfolioInfo {
@@ -39,12 +39,12 @@
 
 
 #right-triangle {
-     width: 0;
-     height: 0;
-     position: absolute;
-     bottom: -15rem;
-     left: -3px;
-     border-left: 684px solid #fff;
-     border-top: 131px solid transparent;
-     border-bottom: 139px solid transparent;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -1rem;
+    left: 0px;
+    border-left: 878px solid #fff;
+    border-top: 375px solid transparent;
+    border-bottom: 7px solid transparent;
 }

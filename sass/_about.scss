@@ -7,19 +7,25 @@
 		position: relative;
 		padding: 1rem 0 6rem 0;
 		transform: skewY(-13deg);
+		h2 {
+			text-align: center;
+		}
+		p {
+			font-size: 1.6rem;
+		}
 	}
 }
 
 #left-triangle {
 	position: absolute;
 	right: 0;
-	top: -14rem;
+	top: -38rem;
 	z-index: -8;
 	width: 0;
 	height: 0;
-	border-right: 878px solid $tealcolor;
-	border-top: 205px solid transparent;
-	border-bottom: 100px solid transparent;
+	border-right: 878px solid #47d1d1;
+	border-top: 394px solid transparent;
+	border-bottom: 19px solid transparent;
 }
 
 .about {

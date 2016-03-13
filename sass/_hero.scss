@@ -2,17 +2,61 @@
 	height: 85vh;
 	background-size: cover; 
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	// background-attachment: fixed;
 	display: flex;
 	align-items: center;
     justify-content: center;
     flex-direction: column;
-	h1 {
-		font-size: 7rem;
-		text-transform: uppercase;
-		letter-spacing: 1rem;
-		color: #fff;
-		margin: 0;
-		font-family: $font;
+    .content {
+    	display: flex;
+    	align-items: center;
+    	.logo {
+    		width: 10%;
+    	}
+		h1 {
+			font-size: 7rem;
+			text-transform: uppercase;
+			letter-spacing: 1rem;
+			color: #fff;
+			margin: 0;
+			padding-left: 3rem;
+			font-family: $font;
+		}
 	}
+}
+
+.navContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding-bottom: 2rem;
+	width: 100%;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 2rem;
+    top: 20rem;
+    z-index: 100;
+    border-top: 0;
+    display: block;
+}
+
+.navDown {
+	flex-direction: column;
+}
+
+.logo2 {
+	position: fixed;
+    left: 0;
+    top: 0;
+    margin-top: 3rem;
+    padding-left: 3rem;
+    z-index: 100;
+    border-top: 0;
+}
+
+.navPadding {
+	padding: 2rem 0;
 }
