@@ -26,13 +26,16 @@
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
       <section class="aboutSection" id="about">
-	      		<div id="left-triangle"></div>
+	    <div id="left-triangle"></div>
       	<div class="container">
 	      	<div class="aboutContent">
-		        	<h2><?php the_title(); ?></h2>
+		        <h2><?php the_title(); ?></h2>
 		      	<div class="about">
-	       			<?php the_content(); ?>
-		        	<img src="<?php the_post_thumbnail_url('full')?>" alt="">
+		      		<div class="aboutInfo">
+		       			<?php the_content(); ?>
+		       		</div>
+		        	<div class="aboutImage"><img src="<?php the_post_thumbnail_url('full')?>" alt="">
+		        	</div>
 		        </div>
 	       	 </div>
 	       </div>

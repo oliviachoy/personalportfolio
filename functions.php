@@ -51,6 +51,8 @@ function hackeryou_styles(){
 
 	wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css?family=Lato:400,300');
 
+	wp_enqueue_style('googlefont', 'https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day');
+
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_styles');

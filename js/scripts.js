@@ -32,7 +32,9 @@ $(function(){
 	var scrollTop = $(window).scrollTop();
 	      
 	if (scrollTop > stickyNavTop) { 
-	    $('.navContainer').addClass('sticky');
+	    $('.navContainer').addClass('sticky').animate({
+	    	transition: ["all", "0.5s", "ease"]
+	    });
 	    $('.menu').addClass('navDown');
 	    $('.menu-item').addClass('navPadding');
 	    $('.logo').addClass('logo2');
