@@ -32,9 +32,7 @@ $(function(){
 	var scrollTop = $(window).scrollTop();
 	      
 	if (scrollTop > stickyNavTop) { 
-	    $('.navContainer').addClass('sticky').animate({
-	    	transition: ["all", "0.5s", "ease"]
-	    });
+	    $('.navContainer').addClass('sticky').fadeIn();
 	    $('.menu').addClass('navDown');
 	    $('.menu-item').addClass('navPadding');
 	    $('.logo').addClass('logo2');
@@ -50,5 +48,13 @@ $(function(){
 	$(window).scroll(function() {
 	    stickyNav();
 	});
+
+	window.sr = ScrollReveal({ reset: true });
+	sr.reveal('.aboutImage', { duration: 1000, scale: 0.5});
+	sr.reveal('.icons', { duration: 1000, scale: 0.5 });
+	sr.reveal('.contactCaption', {duration: 1000});
+
+
 });
+
 

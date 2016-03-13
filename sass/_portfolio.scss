@@ -10,8 +10,10 @@
 		flex-direction: column;
 		padding: 12rem 0;
 		h2 {
-			font-size: 2.5rem;
+			font-size: 4rem;
 			text-align: center;
+			letter-spacing: .1rem;
+			font-weight: 400;
 		}
 		.portfolioDescription {
 			display: flex;
@@ -21,16 +23,33 @@
 				width: 40%;
 				}
 			.portfolioInfo {
-				width: 50%;
+				width: 40%;
+				display: flex;
+				flex-direction: column;
+				padding-left: 4rem;
 				h3 {
 					font-size: 3rem;
-					padding-left: 4rem;
 					margin: 0;
 					font-weight: 400;
 				}
 				p {
 					font-size: 1.6rem;
-					padding-left: 7rem;
+					span {
+						color: #fff;
+					}
+				}
+				.button {
+					text-align: right;
+					padding-top: 2rem;
+					button {
+						padding: 1.5rem;
+						border-style: none;
+						background-color: white;
+						a {
+							font-size: 2.5rem;
+							color: $tealcolor;
+						}
+					}
 				}
 			}
 		}

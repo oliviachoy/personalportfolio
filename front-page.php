@@ -42,11 +42,10 @@
 		</section>
 		
 		<section class="skills" id="skills">
-			<div class="overlay"></div>
 				<div class="container">
 				<h2><?php the_field('skills_title');?></h2>
 				<div class="skillsContainer">
-					<div class="skillIcons">
+					<div class="skillIcons parallax">
 						<?php if( have_rows('skill-icons')): ?>
 						<?php while( have_rows('skill-icons')): the_row(); ?>
 						<div class="icons">
@@ -83,6 +82,9 @@
 					 	<div class="portfolioInfo">
 					    	<h3><?php the_title(); ?></h3>
 						 	<?php the_content();?>
+							<div class="button">
+						 		<button><a href="<?php the_field('live_link') ?>">View Live</a></button>
+						 	</div>
 					 	</div>
 				 	</div>
 				  <?php endwhile; ?>
@@ -103,11 +105,12 @@
 					<?php while( have_rows('contact_icons')): the_row(); ?>
 						<div class="contactCaption">
 						<p><?php the_sub_field('info') ?></p>
-						<p>
+						<p class="contactLinks">
 							<?php the_sub_field('icon') ?> 
 							<a href="<?php the_sub_field('contact_link') ?>"><?php the_sub_field('caption')?></a>
 						</p>
 						</div>
+
 					<?php endwhile; ?>
 				<?php endif; ?>
 				</div>

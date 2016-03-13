@@ -53,6 +53,8 @@ function hackeryou_styles(){
 
 	wp_enqueue_style('googlefont', 'https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day');
 
+	wp_enqueue_style('googlefont1', 'https://fonts.googleapis.com/css?family=EB+Garamond');
+
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_styles');
@@ -84,6 +86,13 @@ function hackeryou_scripts() {
     'scripts', //handle
     get_template_directory_uri() . '/js/main.min.js', //source
     array( 'jquery', 'plugins' ), //dependencies
+    null, // version number
+    true //load in footer
+  );
+
+  wp_enqueue_script(
+    'scroll', //handle
+   	"http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://cdn.jsdelivr.net/scrollreveal.js/3.1.1/scrollreveal.min.js",
     null, // version number
     true //load in footer
   );
