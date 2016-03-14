@@ -11,7 +11,9 @@
 	.contactContainer {
 		@media (max-width: 768px) {
 			width: 60%;
-
+		}
+		@media (max-width: 480px){
+			width: 70%;
 		}
 		.contactIcons {
 			display: flex;
@@ -19,6 +21,9 @@
 			justify-content: space-between;
 			@media (max-width: 768px) {
 				flex-wrap: wrap;
+			}
+			@media (max-width: 480px) {
+				padding-left: 5rem;
 			}
 			.contactCaption {
 				font-size: 1.6rem;

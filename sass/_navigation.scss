@@ -4,12 +4,12 @@ ul.menu {
 	display: flex;
 	justify-content: space-between;
 	z-index: 999;
+	@media (max-width: 650px) {
+		flex-direction: column;
+	}
 	@media (max-width: 590px) {
 		flex-wrap: wrap;
 	} 
-	@media (max-width: 480px) {
-		flex-direction: column;
-	}
 	li {
 		display: inline;
 		margin-right: 10px;

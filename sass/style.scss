@@ -75,6 +75,9 @@ h2 {
 	font-size: 3.8rem;
 	font-weight: 400;
 	letter-spacing: .1rem;
+	@media (max-width: 480px){
+		font-size: 3rem;
+	}
 }
 
 

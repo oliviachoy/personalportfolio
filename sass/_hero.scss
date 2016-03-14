@@ -42,7 +42,7 @@
             @media (max-width: 768px) {
                 width: 15%;
             }
-            @media (max-width: 480px) {
+            @media (max-width: 650px) {
                 top: 2rem;
                 left: 1rem;
                 width: 12%;
@@ -52,7 +52,7 @@
         }
         .hiddenMenu {
             display: none;
-            @media (max-width: 480px) {
+            @media (max-width: 650px) {
                 display: block;
                 font-size: 2rem;
                 font-family: $font;
@@ -96,7 +96,7 @@
 	justify-content: space-around;
 	padding: 2rem 0;
 	width: 100%;
-    @media (max-width: 712px ) {
+    @media (max-width: 650px ) {
         display: none;
     }
 }
@@ -109,7 +109,7 @@
     z-index: 100;
     border-top: 0;
     display: block;
-    @media (max-width: 712px) {
+    @media (max-width: 650px) {
         display: none;
     }
 }
@@ -120,8 +120,8 @@
 
 .logo2 {
 	position: fixed;
-    top: 0;
-    left:0;
+    top: 1rem;
+    left: 1rem;
     z-index: 100;
     border-top: 0;
 }
