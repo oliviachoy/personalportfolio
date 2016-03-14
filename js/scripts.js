@@ -1,6 +1,8 @@
 $(function(){
 
 	console.log("It's working");
+
+
 	$('#menu-item-13 a').on('click', function (){
 		$('html, body').animate ({
 			scrollTop: $("#about").offset().top
@@ -32,8 +34,8 @@ $(function(){
 	var scrollTop = $(window).scrollTop();
 	      
 	if (scrollTop > stickyNavTop) { 
-	    $('.navContainer').addClass('sticky').fadeIn();
-	    $('.menu').addClass('navDown');
+	    $('.navContainer').addClass('sticky').fadeIn('slow');
+	    $('.menu').addClass('navDown').fadeIn();
 	    $('.menu-item').addClass('navPadding');
 	    $('.logo').addClass('logo2');
 	} else {
@@ -48,13 +50,18 @@ $(function(){
 	$(window).scroll(function() {
 	    stickyNav();
 	});
+	
+	$(".rotate").textrotator({
+        animation: "dissolve",
+        separator: ",",
+   		speed: 2000
+    });
 
-	window.sr = ScrollReveal({ reset: true });
-	sr.reveal('.aboutImage', { duration: 1000, scale: 0.5});
-	sr.reveal('.icons', { duration: 1000, scale: 0.5 });
+	window.sr = ScrollReveal({ reset: true});
+	sr.reveal('.aboutImage', { duration: 1500, scale: 0.5});
+	sr.reveal('.icons', { duration: 1500, scale: 0.3});
 	sr.reveal('.contactCaption', {duration: 1000});
-
-
+	
 });
 
 

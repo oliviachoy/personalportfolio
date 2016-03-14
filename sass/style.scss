@@ -32,9 +32,14 @@ Default Styling
 
 html {
 	font-size: 62.5%;
+	height: 100%;
 }
 img {
 	max-width: 100%;
+}
+
+.siteWrapper {
+	max-width: 2000px;
 }
 
 body {

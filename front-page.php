@@ -1,3 +1,4 @@
+<div class="sitewrapper">
 <?php get_header();  ?>
 
 <div class="main">
@@ -9,7 +10,7 @@
 				</div>
 			     <h1><?php bloginfo( 'name' ); ?></h1>
 			</div>
-				 <h2><?php bloginfo('description'); ?></h2>
+				 <h2><?php bloginfo('description'); ?> I Enjoy <span class="rotate"> Coding, Learning, Travelling, Eating, Exploring, Designing,  Challenges, Projects, New Ideas </span>.</h2>
 			<header>
 			  <div class="navContainer">
 			    <?php wp_nav_menu( array(
@@ -42,22 +43,24 @@
 		</section>
 		
 		<section class="skills" id="skills">
-				<div class="container">
-				<h2><?php the_field('skills_title');?></h2>
-				<div class="skillsContainer">
-					<div class="skillIcons parallax">
-						<?php if( have_rows('skill-icons')): ?>
-						<?php while( have_rows('skill-icons')): the_row(); ?>
-						<div class="icons">
-							<i class="<?php the_sub_field('icon')?>"></i>
-							<p class="caption">
-								<?php the_sub_field('caption')?>
-							</p>
+			<div class="container">
+					<h2><?php the_field('skills_title');?></h2>
+				<div class="skillSection">
+					<div class="skillsContainer">
+						<div class="skillIcons">
+							<?php if( have_rows('skill-icons')): ?>
+							<?php while( have_rows('skill-icons')): the_row(); ?>
+							<div class="icons">
+								<i class="<?php the_sub_field('icon')?>"></i>
+								<p class="caption">
+									<?php the_sub_field('caption')?>
+								</p>
+							</div>
+							<?php endwhile; ?>
+						<?php endif; ?>
 						</div>
-						<?php endwhile; ?>
-					<?php endif; ?>
+						<!-- <p><?php the_field('service_description');?></p> -->
 					</div>
-					<p><?php the_field('service_description');?></p>
 				</div>
 			</div>
 		</section>
@@ -122,4 +125,5 @@
 			<?php get_footer(); ?>
     </div> <!-- /,content -->
 </div> <!-- /.main -->
+</div>
 

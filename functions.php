@@ -91,11 +91,21 @@ function hackeryou_scripts() {
   );
 
   wp_enqueue_script(
+    'rotate', //handle
+    get_template_directory_uri() . '/js/jquery.simple-text-rotator.js', //source
+    array( 'jquery'), //dependencies
+    null, // version number
+    true //load in footer
+  );
+  
+  wp_enqueue_script(
     'scroll', //handle
    	"http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://cdn.jsdelivr.net/scrollreveal.js/3.1.1/scrollreveal.min.js",
     null, // version number
     true //load in footer
   );
+  
+
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_scripts');
