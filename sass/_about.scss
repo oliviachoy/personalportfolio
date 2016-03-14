@@ -6,7 +6,7 @@
 		}
 	.aboutContent {
 		position: relative;
-		padding: 1rem 0 6rem 0;
+		padding: 1rem 0 18rem 0;
 		transform: skewY(-13deg);
 		@media (max-width: 1024px) {
 			padding-bottom: 14rem;
@@ -76,7 +76,6 @@
 		}
 		p {
 			letter-spacing: .1rem;
-			line-height: 2.4rem;
 			font-size: 1.8rem;
 		}
 		p span {

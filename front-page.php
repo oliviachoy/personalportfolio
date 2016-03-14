@@ -7,6 +7,7 @@
  			<div class="content2">
 		    	<div class="heroInfo">
 					<div class="logo"><img src="<?php the_field('logo', 'option'); ?>" alt="">
+					<p class="hiddenMenu">Menu</p>
 					</div>
 				     <h1><?php bloginfo( 'name' ); ?></h1>
 				</div>
@@ -87,7 +88,7 @@
 					    	<h3><?php the_title(); ?></h3>
 						 	<?php the_content();?>
 							<div class="button">
-						 		<button><a href="<?php the_field('live_link') ?>">View Live</a></button>
+						 		<a href="<?php the_field('live_link') ?>"><button>View Live</button></a>
 						 	</div>
 					 	</div>
 				 	</div>

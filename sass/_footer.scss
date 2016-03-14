@@ -9,6 +9,9 @@ footer {
       p {
          font-size: 1.3rem;
          margin: 0;
+         @media (max-width: 480px) {
+            margin: 0 auto;
+         }
       }
 		
 	}

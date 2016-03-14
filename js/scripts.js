@@ -54,7 +54,7 @@ $(function(){
 	
 	$('.logo').on('click', function(){
 		$('.navContainer').toggleClass('hamburgerMenu');
-		// $('.logo').toggleClass('logoMenu');
+		$('.logo').toggleClass('logoMenu');
 		$('.menu li').toggleClass('hamMenu');
 	});
 
