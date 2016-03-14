@@ -3,25 +3,22 @@
 
 <div class="main">
 	<section class="hero" style="background-image: url('<?php the_field('hero_image'); ?>');">
-
  		<div class="container">
-		    <div class="content">
-				<div class="logo"><img src="<?php the_field('logo', 'option'); ?>" alt="">
+		    	<div class="heroInfo">
+					<div class="logo"><img src="<?php the_field('logo', 'option'); ?>" alt="">
+					</div>
+				     <h1><?php bloginfo( 'name' ); ?></h1>
 				</div>
-			     <h1><?php bloginfo( 'name' ); ?></h1>
-			</div>
-				 <h2><?php bloginfo('description'); ?> I Enjoy <span class="rotate"> Coding, Learning, Travelling, Eating, Exploring, Designing,  Challenges, Projects, New Ideas </span>.</h2>
-			<header>
-			  <div class="navContainer">
-			    <?php wp_nav_menu( array(
-			      'container' => false,
-			      'theme_location' => 'primary'
-			    )); ?>
-			  </div> <!-- /.container -->
-			</header><!--/.header-->
-		</div>
+					 <h2><?php bloginfo('description'); ?> I Enjoy <span class="rotate"> Coding, Learning, Travelling, Exploring, Designing, Challenges, Projects, New Ideas,  New Experiences </span>.</h2>
+				<div class="navContainer">
+				    <?php wp_nav_menu( array(
+				      'container' => false,
+				      'theme_location' => 'primary'
+				    )); ?>
+				</div>
+		</div> <!--container -->
 	</section>
-</div>
+
 
       <?php // Start the loop ?>
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
@@ -29,7 +26,7 @@
       <section class="aboutSection" id="about">
 	    <div id="left-triangle"></div>
       	<div class="container">
-	      	<div class="aboutContent">
+	      	<div class="content aboutContent">
 		        <h2><?php the_title(); ?></h2>
 		      	<div class="about">
 		      		<div class="aboutInfo">
@@ -45,7 +42,7 @@
 		<section class="skills" id="skills">
 			<div class="container">
 					<h2><?php the_field('skills_title');?></h2>
-				<div class="skillSection">
+				<div class="content skillSection">
 					<div class="skillsContainer">
 						<div class="skillIcons">
 							<?php if( have_rows('skill-icons')): ?>
@@ -67,7 +64,7 @@
 		
 		<section class="portfolioSection" id="portfolio">
 		<div class="container">
-			<div class="portfolioContent">
+			<div class="content portfolioContent">
 			<h2><?php the_field('port_title');?></h2>
 				<?php $portfolioQuery = new WP_Query(array(
 				  'posts_per_page' => 4,
@@ -100,24 +97,22 @@
 
 		<section class="contact" id="contact">
 			<div class="container">
-			<h2><?php the_field('contact_title') ?></h2>
-			<div class="contactContainer">
-			<!-- 	<p>Always looking to learn more <span class="rott"></span></p> -->
-				<div class="contactIcons">
-				<?php if( have_rows('contact_icons')): ?>
-					<?php while( have_rows('contact_icons')): the_row(); ?>
+				<div class="content contactContainer">
+				<h2><?php the_field('contact_title') ?></h2>
+					<div class="contactIcons">
+					<?php if( have_rows('contact_icons')): ?>
+						<?php while( have_rows('contact_icons')): the_row(); ?>
 						<div class="contactCaption">
-						<p><?php the_sub_field('info') ?></p>
-						<p class="contactLinks">
-							<?php the_sub_field('icon') ?> 
-							<a href="<?php the_sub_field('contact_link') ?>"><?php the_sub_field('caption')?></a>
-						</p>
+							<p><?php the_sub_field('info') ?></p>
+							<p class="contactLinks">
+								<?php the_sub_field('icon') ?> 
+								<a href="<?php the_sub_field('contact_link') ?>"><?php the_sub_field('caption')?></a>
+							</p>
 						</div>
-
-					<?php endwhile; ?>
-				<?php endif; ?>
+						<?php endwhile; ?>
+					<?php endif; ?>
+					</div>
 				</div>
-			</div>
 			</div>
 		</section>
 

@@ -34,8 +34,8 @@ $(function(){
 	var scrollTop = $(window).scrollTop();
 	      
 	if (scrollTop > stickyNavTop) { 
-	    $('.navContainer').addClass('sticky').fadeIn('slow');
-	    $('.menu').addClass('navDown').fadeIn();
+	    $('.navContainer').addClass('sticky');
+	    $('.menu').addClass('navDown');
 	    $('.menu-item').addClass('navPadding');
 	    $('.logo').addClass('logo2');
 	} else {
@@ -61,7 +61,7 @@ $(function(){
 	sr.reveal('.aboutImage', { duration: 1500, scale: 0.5});
 	sr.reveal('.icons', { duration: 1500, scale: 0.3});
 	sr.reveal('.contactCaption', {duration: 1000});
-	
+
 });
 
 

@@ -3,6 +3,7 @@ ul.menu {
 	padding: 0;
 	display: flex;
 	justify-content: space-between;
+	z-index: 999;
 	li {
 		display: inline;
 		margin-right: 10px;
@@ -14,6 +15,9 @@ ul.menu {
 			text-transform: uppercase;
 			font-family: $font;
 			letter-spacing: .2rem;
+			@media (max-width: 1024px) {
+				font-size: 1.8rem;
+			}
 		}
 	}
 }

@@ -16,19 +16,21 @@
 		.portfolioDescription {
 			display: flex;
 			padding: 4rem 0;
-			justify-content: center;
+			justify-content: space-around;
 			.portImage{
 				width: 40%;
 				}
 			.portfolioInfo {
-				width: 40%;
+				width: 50%;
 				display: flex;
 				flex-direction: column;
-				padding-left: 4rem;
 				h3 {
 					font-size: 3rem;
 					margin: 0;
 					font-weight: 400;
+					@media (max-width: 1024px) {
+						font-size: 2rem;
+					}
 				}
 				p {
 					font-size: 1.6rem;
@@ -46,6 +48,9 @@
 						a {
 							font-size: 2.5rem;
 							color: $tealcolor;
+							@media (max-width: 1024px) {
+								font-size: 1.5rem;
+							}
 						}
 					}
 				}

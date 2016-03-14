@@ -1,15 +1,21 @@
 .aboutSection {
 		transform: skewY(13deg);
-		// background-color: rgba(13,189,183, 0.7);
 		background-color: $tealcolor;
-		// background: linear-gradient(140deg, rgba(13,189,183,1) 0%, rgba(0,245,237,1) 100%);
+		@media (max-width: 480px) {
+			transform: none;
+		}
 	.aboutContent {
 		position: relative;
 		padding: 1rem 0 6rem 0;
 		transform: skewY(-13deg);
+		@media (max-width: 1024px) {
+			padding-bottom: 14rem;
+		}
+		@media (max-width: 480px) {
+			transform: none;
+		}
 		h2 {
 			text-align: center;
-			font-size: 3rem;
 		}
 	}
 }
@@ -24,17 +30,32 @@
 	border-right: 878px solid #47d1d1;
 	border-top: 394px solid transparent;
 	border-bottom: 19px solid transparent;
+	@media (max-width: 480px) {
+		display: none;
+	}
 }
 
 .about {
 	z-index: 999;
 	display: flex;
 	justify-content: space-around;
+	@media (max-width: 480px) {
+		flex-direction: column;
+	}
 	.aboutImage {
 		width: 23%;
+		@media (max-width: 1024px) {
+			width: 40%;
+		}
+		@media (max-width: 480px) {
+			width: 60%;
+		}
 	}
 	.aboutInfo {
 		width: 40%;
+		@media (max-width: 480px) {
+			width: 100%;
+		}
 		p {
 			letter-spacing: .1rem;
 			line-height: 2.4rem;

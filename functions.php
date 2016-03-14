@@ -53,7 +53,7 @@ function hackeryou_styles(){
 
 	wp_enqueue_style('googlefont', 'https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day');
 
-	wp_enqueue_style('googlefont1', 'https://fonts.googleapis.com/css?family=EB+Garamond');
+	wp_enqueue_style('googlefont2', 'https://fonts.googleapis.com/css?family=Lustria');
 
 }
 

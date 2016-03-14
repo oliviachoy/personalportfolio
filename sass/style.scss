@@ -10,7 +10,7 @@
 $tealcolor:  #47d1d1;
 $font: 'Lato', sans-serif;
 $signature: 'Dawning of a New Day', cursive;
-$title: 'EB Garamond', serif;
+$title2 : 'Lustria', serif;
 
 @import 'normalize';
 @import 'typography';
@@ -52,19 +52,28 @@ body {
 }
 
 .container {
-	max-width: 1300px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
-// .content {
-// 	margin: 0 auto;
-// }
+.content {
+	width: 90%;
+	margin: 0 auto;
+	@media (max-width: 1260px) {
+		width: 70%;
+	}
+}
 
 .full {
 	width: 100%;
 }
 
-
+h2 {
+	font-family: $title2;
+	font-size: 3rem;
+	font-weight: 400;
+	letter-spacing: .1rem;
+}
 
 
 
