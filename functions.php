@@ -97,6 +97,14 @@ function hackeryou_scripts() {
     null, // version number
     true //load in footer
   );
+
+  // wp_enqueue_script(
+  //   'rotate', //handle
+  //   get_template_directory_uri() . '/js/jquery.fatNav.js', //source
+  //   array( 'jquery'), //dependencies
+  //   null, // version number
+  //   true //load in footer
+  // );
   
   wp_enqueue_script(
     'scroll', //handle

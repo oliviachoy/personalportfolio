@@ -22,6 +22,12 @@
 				display: flex;
 				justify-content: space-between;
 				padding: 6rem 0;
+				@media(max-width: 840px) {
+					flex-wrap: wrap;
+				}
+				@media (max-width: 590px) {
+					flex-direction: column;
+				}
 				.icons {
 					display: flex;
 					flex-direction: column;
@@ -32,6 +38,10 @@
 					p {
 						font-size: 2rem;
 						text-align: center;
+						@media (max-width: 590px) {
+							color: $tealcolor;
+							padding: 0;
+						}
 					}
 				}
 			}

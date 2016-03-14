@@ -6,15 +6,21 @@
 	align-items: center;
     justify-content: center;
     flex-direction: column;
-    @media (max-width: 480px) {
+    @media (max-width: 760px) {
         background-position: center;
     }
     h2 {
-    	font-size: 2.5rem;
-    	color: #fff;
-    	text-align: center;
+        font-size: 2.5rem;
+        color: #fff;
+        text-align: center;
         margin: 0;
         padding-top: 1rem;
+        @media (max-width: 780px) {
+            font-size: 2rem;
+        }
+        @media (max-width: 560px) {
+
+        } 
         span {
             color: $tealcolor;
             text-shadow: 2px 2px 2px black;
@@ -22,23 +28,44 @@
         }
     }
     .heroInfo {
-    	display: flex;
+        display: flex;
          align-items: center;
-    	.logo {
-    		width: 9%;
-    	}
-		h1 {
-			font-size: 10rem;
-			text-shadow: 2px 2px 2px grey;
-			text-transform: uppercase;
+         @media (max-width: 840px) {
+            flex-direction: column;
+         }
+        .logo {
+            width: 9%;
+            @media (max-width: 768px) {
+                width: 15%;
+            }
+        }
+        h1 {
+            font-size: 10rem;
+            text-shadow: 2px 2px 2px grey;
+            text-transform: uppercase;
             font-weight: 500;
-			letter-spacing: 1rem;
-			color: #fff;
-			margin: 0;
-			padding-left: 2rem;
-			// font-family: $title2;
-		  }
+            letter-spacing: 1rem;
+            color: #fff;
+            margin: 0;
+            padding-left: 2rem;
+            // font-family: $title2;
+            @media(max-width: 780px) {
+                font-size: 7rem;
+            }
+            @media (max-width: 590px) {
+                 font-size: 5rem;
+                 text-align: center;
+             }   
+          }
       }
+}
+
+.content2 {
+    width: 100%;
+    margin: 0 auto;
+    @media(max-width: 590px) {
+        width: 80%;
+    }
 }
 
 .navContainer {
@@ -47,6 +74,10 @@
 	justify-content: space-around;
 	padding: 2rem 0;
 	width: 100%;
+    @media (max-width: 712px ) {
+        display: none;
+        
+    }
 }
 
 .sticky {
@@ -57,6 +88,9 @@
     z-index: 100;
     border-top: 0;
     display: block;
+    @media (max-width: 712px) {
+        display: none;
+    }
 }
 
 .navDown {
@@ -75,4 +109,17 @@
 
 .navPadding {
 	padding: 2rem 0;
+}
+
+.logoMenu {
+    
+} 
+
+.hamburgerMenu {
+    display: block;
+    width: 100%;
+    background-color: $tealcolor;
+    position: fixed;
+    left: 0;
+    top: 10rem;
 }

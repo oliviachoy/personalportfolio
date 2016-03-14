@@ -4,6 +4,9 @@ ul.menu {
 	display: flex;
 	justify-content: space-between;
 	z-index: 999;
+	@media (max-width: 590px) {
+		flex-wrap: wrap;
+	} 
 	li {
 		display: inline;
 		margin-right: 10px;
@@ -20,4 +23,8 @@ ul.menu {
 			}
 		}
 	}
+}
+
+.hamMenu {
+	text-align: center;
 }

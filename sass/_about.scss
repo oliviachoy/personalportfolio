@@ -30,22 +30,37 @@
 	border-right: 878px solid #47d1d1;
 	border-top: 394px solid transparent;
 	border-bottom: 19px solid transparent;
+	@media(max-width: 840px) {
+		top: -19rem;
+	}
 	@media (max-width: 480px) {
 		display: none;
 	}
+}
+
+.leftTriangle {
+	width: 100%;
 }
 
 .about {
 	z-index: 999;
 	display: flex;
 	justify-content: space-around;
-	@media (max-width: 480px) {
+	@media (max-width: 780px) {
 		flex-direction: column;
+		align-items: center;
 	}
+	// @media (max-width: 480px) {
+	// 	flex-direction: column;
+	// }
 	.aboutImage {
 		width: 23%;
 		@media (max-width: 1024px) {
 			width: 40%;
+		}
+		@media (max-width: 840px) {
+			width: 55%;
+			padding-top: 2rem;
 		}
 		@media (max-width: 480px) {
 			width: 60%;
@@ -53,6 +68,9 @@
 	}
 	.aboutInfo {
 		width: 40%;
+		@media(max-width: 780px) {
+			width: 80%;
+		}
 		@media (max-width: 480px) {
 			width: 100%;
 		}

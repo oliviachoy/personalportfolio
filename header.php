@@ -9,6 +9,7 @@
   <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
   <!-- stylesheets should be enqueued in functions.php -->
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/simpletextrotator.css" media="screen"/>
+  <!-- <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/jquery.fatNav.css" media="screen"/> -->
   <?php wp_head(); ?>
 </head>
 

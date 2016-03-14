@@ -4,6 +4,7 @@
 <div class="main">
 	<section class="hero" style="background-image: url('<?php the_field('hero_image'); ?>');">
  		<div class="container">
+ 			<div class="content2">
 		    	<div class="heroInfo">
 					<div class="logo"><img src="<?php the_field('logo', 'option'); ?>" alt="">
 					</div>
@@ -16,6 +17,7 @@
 				      'theme_location' => 'primary'
 				    )); ?>
 				</div>
+			</div>
 		</div> <!--container -->
 	</section>
 
@@ -24,7 +26,9 @@
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
       <section class="aboutSection" id="about">
-	    <div id="left-triangle"></div>
+	    <div class="leftTriangle">
+	    	<div id="left-triangle"></div>
+	    </div>
       	<div class="container">
 	      	<div class="content aboutContent">
 		        <h2><?php the_title(); ?></h2>

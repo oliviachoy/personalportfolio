@@ -1,4 +1,5 @@
 $(function(){
+	
 
 	console.log("It's working");
 
@@ -51,11 +52,18 @@ $(function(){
 	    stickyNav();
 	});
 	
+	$('.logo').on('click', function(){
+		$('.navContainer').toggleClass('hamburgerMenu');
+		// $('.logo').toggleClass('logoMenu');
+		$('.menu li').toggleClass('hamMenu');
+	});
+
 	$(".rotate").textrotator({
         animation: "dissolve",
         separator: ",",
    		speed: 2000
     });
+
 
 	window.sr = ScrollReveal({ reset: true});
 	sr.reveal('.aboutImage', { duration: 1500, scale: 0.5});
