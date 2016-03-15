@@ -51,9 +51,10 @@
 					}
 				}
 				.button {
-					text-align: right;
 					padding-top: 2rem;
-					margin: 0 auto;
+					@media (max-width: 480px) {
+						margin: 0 auto;
+					}
 					a {
 						font-size: 2.5rem;
 						color: $tealcolor;
@@ -86,11 +87,18 @@
     position: absolute;
     bottom: -1rem;
     left: 0px;
-    border-left: 878px solid $offwhite;
-    border-top: 375px solid transparent;
+    border-left: 992px solid $offwhite;
+    border-top: 417px solid transparent;
     border-bottom: 7px solid transparent;
+    @media(max-width: 1706px) {
+    	border-left: 878px solid $offwhite;
+   		border-top: 375px solid transparent;
+    }
+    @media(max-width: 1370px) {
+    	bottom: -9rem;
+    }
     @media (max-width: 950px){
-    	bottom: -21rem;
+    	bottom: -18rem;
     }
     // @media (max-width: 768px){
     // 	bottom: -21rem;

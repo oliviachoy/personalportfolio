@@ -13,6 +13,9 @@ ul.menu {
 	li {
 		display: inline;
 		margin-right: 10px;
+		&:hover {
+			border-bottom: 2px solid $offwhite;
+		}
 		a {
 			padding: 10px;
 			color: #000;

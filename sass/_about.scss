@@ -23,13 +23,21 @@
 #left-triangle {
 	position: absolute;
 	right: 0;
-	top: -38rem;
+	top: -43rem;
 	z-index: -8;
 	width: 0;
 	height: 0;
-	border-right: 878px solid #47d1d1;
-	border-top: 394px solid transparent;
+	border-right: 966px solid #47d1d1;
+	border-top: 434px solid transparent;
 	border-bottom: 19px solid transparent;
+	@media  (max-width: 1710px) {
+		top: -38rem;
+		border-right: 878px solid #47d1d1;
+		border-top: 394px solid transparent;
+	}
+	@media (max-width: 950px){
+		top: -21rem;
+	}
 	@media(max-width: 840px) {
 		top: -19rem;
 	}
@@ -50,9 +58,9 @@
 		flex-direction: column;
 		align-items: center;
 	}
-	// @media (max-width: 480px) {
-	// 	flex-direction: column;
-	// }
+	@media (max-width: 480px) {
+		margin-left: 2rem;
+	}
 	.aboutImage {
 		width: 23%;
 		@media (max-width: 1024px) {
@@ -71,12 +79,16 @@
 		@media(max-width: 780px) {
 			width: 80%;
 		}
-		@media (max-width: 480px) {
+		@media (max-width: 500px) {
 			width: 100%;
 		}
+
 		p {
 			letter-spacing: .1rem;
 			font-size: 1.8rem;
+		}
+		@media(max-width: 400px) {
+			font-size: 1.6rem;
 		}
 		p span {
 			font-family: $signature;
