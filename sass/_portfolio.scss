@@ -90,6 +90,7 @@
     border-left: 992px solid $offwhite;
     border-top: 417px solid transparent;
     border-bottom: 7px solid transparent;
+    z-index: -14;
     @media(max-width: 1706px) {
     	border-left: 878px solid $offwhite;
    		border-top: 375px solid transparent;

@@ -1,12 +1,12 @@
 .hero {
-	height: 85vh;
+	height: 95vh;
 	background-size: cover; 
 	background-repeat: no-repeat;
 	display: flex;
 	align-items: center;
     justify-content: center;
     flex-direction: column;
-    @media (max-width: 760px) {
+    @media (max-width: 768px) {
         background-position: center;
     }
     @media (max-width: 480px) {
