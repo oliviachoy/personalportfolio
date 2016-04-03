@@ -8,9 +8,9 @@
 */
 // $tealcolor: #0DBDB7;
 $tealcolor:  #47d1d1;
-$font: 'Lato', sans-serif;
+$font: 'montserrat', sans-serif;
 $signature: 'Dawning of a New Day', cursive;
-$title2 : 'Lustria', serif;
+$body:  'Crimson Text', serif;
 $offwhite: #F5F5F5;
 
 @import 'normalize';
@@ -20,6 +20,7 @@ $offwhite: #F5F5F5;
 @import 'hero';
 @import 'about';
 @import 'skills';
+@import 'service';
 @import 'portfolio';
 @import 'contact';
 @import 'sidebar';
@@ -45,7 +46,7 @@ img {
 
 body {
 	color: #333;
-	font-family: $title2;
+	font-family: $body;
 	background-color: $offwhite;
 }
 
@@ -61,8 +62,11 @@ body {
 .content {
 	width: 90%;
 	margin: 0 auto;
-	@media (max-width: 1260px) {
+	@media (max-width: 1367px) {
 		width: 70%;
+	}
+	@media (max-width: 700px) {
+		width: 55%;
 	}
 }
 
@@ -72,15 +76,19 @@ body {
 
 h2 {
 	font-family: $font;
-	font-size: 3.8rem;
+	font-size: 3.5rem;
 	font-weight: 400;
-	letter-spacing: .1rem;
+	letter-spacing: .3rem;
+	text-transform: uppercase;
 	@media (max-width: 480px){
 		font-size: 3rem;
 	}
 }
 
-
+h3 {
+	font-family: $font;
+	font-weight: 400;
+}
 
 
 

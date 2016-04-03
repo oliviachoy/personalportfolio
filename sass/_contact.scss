@@ -1,11 +1,16 @@
 .contact {
 	position: relative;
-	padding: 3rem 0;
+	padding: 5rem 0;
 	top: -3rem;
 	h2 {
 		padding: 2rem 0;
+		text-transform: none;
+		letter-spacing: .2rem;
 		@media (max-width: 768px) {
 			text-align: center;
+		}
+		@media (max-width: 480px) {
+			font-size: 2.5rem;
 		}
 	}
 	.contactContainer {
@@ -19,20 +24,37 @@
 			display: flex;
 			width: 100%;
 			justify-content: space-between;
-			@media (max-width: 768px) {
+			@media (max-width: 966px) {
 				flex-wrap: wrap;
 			}
-			@media (max-width: 480px) {
-				padding-left: 5rem;
+			@media (max-width: 560px) {
+				display: block;
+				text-align: center;
 			}
 			.contactCaption {
-				font-size: 1.6rem;
+				@media (max-width: 480px) {
+					padding: .5rem 0;
+				}
+				p {
+					font-size: 1.8rem;
+					font-style: italic;
+				}
 				.contactLinks {				
-					
+					@media(max-width: 1083px) {
+						display: flex;
+						flex-direction: column;
+					}
+					@media (max-width: 480px) {
+						flex-direction: row;
+						justify-content: center;
+					}
 					i {
 						font-size: 4rem;
 						color:$tealcolor;
 						transition: all 2s;
+						@media(max-width: 1367px) {
+							font-size: 2rem;
+						}
 						@media (max-width: 1024px) {
 							font-size: 2.2rem;
 						}
@@ -42,12 +64,15 @@
 						padding-left: 1rem;
 						color: #000;
 						font-weight: bold;
-						@media (max-width: 1024px){
+						font-style: normal;
+						@media (max-width: 1367px) {
+							padding: 0;
 							font-size: 1.6rem;
 						}
-					}
-					&:hover {
-						border-bottom: 1px solid black;
+						@media(max-width: 480px) {
+							padding-left: 1rem;
+						}
+	
 					}
 				}
 			}

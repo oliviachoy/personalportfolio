@@ -1,9 +1,7 @@
 <footer>
 	<div id="triangle-bottomleft"></div>
 	<div id="triangle-bottomright"></div>
-  <div class="container">
-    <p>&copy; Olivia Choy <?php echo date('Y'); ?></p>
-  </div>
+    <p>Made with ♡ | Olivia Choy <?php echo date('Y'); ?></p>
 </footer>
 
 <script>

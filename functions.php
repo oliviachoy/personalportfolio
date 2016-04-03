@@ -49,11 +49,15 @@ function hackeryou_styles(){
 
 	wp_enqueue_style('devicon', 'https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css');
 
-	wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css?family=Lato:400,300');
+	// wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css?family=Lato:400,300');
+	wp_enqueue_style('googlefonts1','https://fonts.googleapis.com/css?family=Montserrat');
+
+	wp_enqueue_style('googlefonts2', 'https://fonts.googleapis.com/css?family=Crimson+Text'
+		);
 
 	wp_enqueue_style('googlefont', 'https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day');
 
-	wp_enqueue_style('googlefont2', 'https://fonts.googleapis.com/css?family=Lustria');
+	// wp_enqueue_style('googlefont2', 'https://fonts.googleapis.com/css?family=Lustria');
 
 }
 
@@ -101,6 +105,7 @@ function hackeryou_scripts() {
   wp_enqueue_script(
     'scroll', //handle
    	"http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://cdn.jsdelivr.net/scrollreveal.js/3.1.1/scrollreveal.min.js",
+   	false, //dependencies
     null, // version number
     true //load in footer
   );

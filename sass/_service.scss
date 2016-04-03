@@ -1,0 +1,15 @@
+.service {
+	padding: 2rem 0 5rem 0;
+	span {
+		color: $tealcolor;
+		letter-spacing:.1rem; 
+	}
+	p {
+		font-size: 2rem;
+		@media(max-width:480px ) {
+		font-size: 1.8rem;
+		line-height: 3rem;
+		text-align: center;
+		}
+	}
+}

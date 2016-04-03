@@ -1,7 +1,5 @@
 .portfolioSection {
 	transform: skewY(-13deg);
-	// background-color: $tealcolor;
-	// background: linear-gradient(139deg, rgba(16,230,222,0.5) 0%, rgba(16,230,222,1) 3%, rgba(0,128,128,1) 100%);
 	background: linear-gradient(140deg, rgba(13,189,183,1) 0%, rgba(0,245,237,1) 100%);
 	position: relative;
 	.portfolioContent {
@@ -39,15 +37,23 @@
 				h3 {
 					font-size: 2.8rem;
 					margin: 0;
-					font-weight: bold;
 					@media (max-width: 1024px) {
 						font-size: 2rem;
 					}
+					@media(max-width: 480px) {
+						font-size: 1.8rem;
+						text-align: center;
+					}
 				}
 				p {
-					font-size: 1.6rem;
+					font-size: 1.8rem;
+					font-style: italic;
+					@media(max-width: 480px) {
+						font-size: 1.5rem;
+					}
 					span {
 						color: #fff;
+						font-style: normal;
 					}
 				}
 				.button {
@@ -95,13 +101,41 @@
     	border-left: 878px solid $offwhite;
    		border-top: 375px solid transparent;
     }
-    @media(max-width: 1370px) {
+    @media(max-width: 1600px){
+    	 border-left: 849px solid $offwhite;
+    	 bottom: -2rem;
+    }
+    @media(max-width: 1500px) {
+    	bottom: -5rem;
+    }
+    @media (max-width: 1400px) {
+    	bottom: -7rem;
+    }
+    @media(max-width: 1300px) {
     	bottom: -9rem;
     }
-    @media (max-width: 950px){
+    @media(max-width: 1200px) {
+    	bottom: -12rem;
+    }
+    @media(max-width: 1100px){
+    	bottom: -14rem;
+    }
+    @media(max-width: 1000px){
+    	bottom:-16rem;
+    }
+    @media (max-width: 900px){
     	bottom: -18rem;
     }
-    // @media (max-width: 768px){
-    // 	bottom: -21rem;
-    // }
+    @media (max-width: 800px){
+    	bottom: -20rem;
+    }
+    @media(max-width: 700px){
+    	bottom:-22rem;
+    }
+    @media(max-width: 650px) {
+    	bottom: -24rem;
+    }
+    @media(max-width: 550px){
+    	bottom: -26rem;
+    }
 }

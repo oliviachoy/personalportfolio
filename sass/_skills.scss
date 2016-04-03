@@ -13,10 +13,11 @@
 		display: flex;
 		justify-content: center;
 		.skillsContainer {
-			width: 80%;
+			width: 100%;
 			p {
 				font-size: 1.5rem;
 				padding-left: 2rem;
+				color: $tealcolor;
 			}
 			.skillIcons {
 				display: flex;
@@ -37,9 +38,10 @@
 					}
 					p {
 						font-size: 2rem;
+						font-style: italic;
 						text-align: center;
+						padding: 0;
 						@media (max-width: 590px) {
-							color: $tealcolor;
 							padding: 0;
 						}
 					}
