@@ -34,8 +34,9 @@ header {
     }
     .heroInfo {
         display: flex;
-         align-items: center;
-         @media (max-width: 840px) {
+        align-items: center;
+        justify-content: center;
+         @media (max-width: 900px) {
             flex-direction: column;
          }
         .logo {
@@ -74,7 +75,7 @@ header {
             font-family: $font;
             padding-left: 2rem;
             // font-family: $title2;
-            @media(max-width: 780px) {
+            @media(max-width: 800px) {
                 font-size: 9rem;
             }
             @media (max-width: 732px) {
@@ -82,7 +83,7 @@ header {
             }
             @media (max-width: 590px) {
                 font-size: 6rem;
-                 text-align: center;
+                text-align: center;
              }   
           }
       }
@@ -111,7 +112,8 @@ header {
 
 .sticky {
     position: fixed;
-    width: 10%;
+    display: block;
+    width: 12%;
     left: 2rem;
     top: 13rem;
     z-index: 9998;

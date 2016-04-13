@@ -1,5 +1,11 @@
 .service {
 	padding: 2rem 0 5rem 0;
+	@media(max-width: 768px) {
+		padding-left: 5rem;
+	}
+	@media(max-width: 480px) {
+		padding-left: 0;
+	}
 	span {
 		color: $tealcolor;
 		letter-spacing:.1rem; 

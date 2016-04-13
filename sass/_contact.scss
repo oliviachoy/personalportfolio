@@ -6,7 +6,7 @@
 		padding: 2rem 0;
 		text-transform: none;
 		letter-spacing: .2rem;
-		@media (max-width: 768px) {
+		@media (max-width: 1012px) {
 			text-align: center;
 		}
 		@media (max-width: 480px) {
@@ -24,7 +24,7 @@
 			display: flex;
 			width: 100%;
 			justify-content: space-between;
-			@media (max-width: 966px) {
+			@media (max-width: 1130px) {
 				flex-wrap: wrap;
 			}
 			@media (max-width: 560px) {
@@ -32,6 +32,12 @@
 				text-align: center;
 			}
 			.contactCaption {
+				@media (max-width: 1130px) {
+					flex: 1 0 50%;
+					flex-wrap: wrap;
+					text-align: center;
+				}
+
 				@media (max-width: 480px) {
 					padding: .5rem 0;
 				}
