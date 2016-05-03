@@ -1,11 +1,7 @@
-$(function(){
+var app = {};
 
-	// if($(window).width() >= 650) {
-	// 	$('.logo').addClass('logo-rotate')
-	// }
-
-	console.log("It's working");
-
+// Start of code for smooth scroll
+app.sScroll = function(){
 	$('#menu-item-13 a').on('click', function (){
 		$('html, body').animate ({
 			scrollTop: $("#about").offset().top
@@ -29,32 +25,32 @@ $(function(){
 			scrollTop: $("#contact").offset().top
 		}, 2000);
 	});
+}; // end of code fo smooth scroll
 
-
-	var stickyNavTop = $('.navContainer').offset().top;
-	var stickyNav = function(){
-		var scrollTop = $(window).scrollTop();
-		      
-		if (scrollTop > stickyNavTop) { 
-		    $('.navContainer').addClass('sticky');
-		    $('.menu').addClass('navDown');
-		    $('.menu-item').addClass('navPadding');
-		    $('.logo').addClass('logo2');
-		} else {
-		    $('.navContainer, .logo').removeClass('sticky');
-		    $('.menu').removeClass('navDown'); 
-		    $('.logo').removeClass('logo2');
+// start of code for sticky top nav
+app.stickyNavTop = $('.navContainer').offset().top;
+app.stickyNav = function(){
+	app.scrollTop = $(window).scrollTop();      
+	if (app.scrollTop > app.stickyNavTop) { 
+		$('.navContainer').addClass('sticky');
+		$('.menu').addClass('navDown');
+		$('.menu-item').addClass('navPadding');
+		$('.logo').addClass('logo2');
+	} else {
+		$('.navContainer, .logo').removeClass('sticky');
+		$('.menu').removeClass('navDown'); 
+		$('.logo').removeClass('logo2');
 		}
 	};
 	 
-	stickyNav();
-	 
 	$(window).scroll(function() {
-	    stickyNav();
+	    app.stickyNav();
 	});
-	
-	var scrollPercentRounded = 0;
+// end of code for sticky top nav
 
+// start of code for rotating logo
+app.spin = function(){
+	var scrollPercentRounded = 0;
 	$(window).scroll(function() {
 	  var scrollTop = $(window).scrollTop();
 	  var docHeight = $(document).height();
@@ -63,17 +59,6 @@ $(function(){
 	   scrollPercentRounded = Math.round(scrollPercent*360);
 	  $('.logo').css({ transform: 'rotate(' + scrollPercentRounded + 'deg)' });
 	});
-	
-	// $(window).resize(function() {
-	// 	 var currentWidth = $(window).width();
-	// 	 if (currentWidth >= 650){
-	// 	      $('.logo').addClass('logo-rotate')
-	// 	    }
-	// 	   else {
-	// 	   	$('.logo').removeClass('logo-rotate').attr('style', '');
-	// 	   }
-	// 	});
-
 
 	$('.logo').on('click', function(){
 		$('.navContainer').toggleClass('hamburgerMenu');
@@ -81,18 +66,29 @@ $(function(){
 		$('.menu li').toggleClass('hamMenu');
 		console.log("clicked")
 	});
+}; // end of code for rotating logo
 
+// start of code for scroll reveal 
+app.reveal = function(){
+	window.sr = ScrollReveal({ reset: true});
+		sr.reveal('.aboutImage', { duration: 1500, scale: 0.5});
+		sr.reveal('.icons', { duration: 1500, scale: 0.3});
+		// sr.reveal('.portfolioDescription', {duration:1500, scale: 0.3});
+		sr.reveal('.contactCaption', {duration: 1000});	
+}; // end of code for scroll reveal 
+
+
+app.init = function(){
+	app.sScroll();
+	app.spin();
+	app.reveal();
+};
+
+$(function(){
+	app.init();
 	$(".rotate").textrotator({
         animation: "dissolve",
         separator: ",",
    		speed: 2000
     });
-
-	window.sr = ScrollReveal({ reset: true});
-	sr.reveal('.aboutImage', { duration: 1500, scale: 0.5});
-	sr.reveal('.icons', { duration: 1500, scale: 0.3});
-	sr.reveal('.contactCaption', {duration: 1000});
-
 });
-
-

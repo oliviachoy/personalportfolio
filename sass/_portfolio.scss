@@ -47,13 +47,13 @@
 				}
 				p {
 					font-size: 1.8rem;
-					font-style: italic;
+					// font-style: italic;
 					@media(max-width: 480px) {
 						font-size: 1.5rem;
 					}
 					span {
 						color: #fff;
-						font-style: normal;
+						font-style: italic;
 					}
 				}
 				.button {
@@ -71,6 +71,7 @@
 							background-color: $offwhite;
 							font-family: $font;
 							color: $tealcolor;
+							transition: all 1s;
 							&:hover {
 								color: #fff;
 								border: 1px solid $offwhite;
