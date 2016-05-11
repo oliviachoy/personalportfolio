@@ -6,28 +6,32 @@ header {
 	align-items: center;
     justify-content: center;
     flex-direction: column;
+    // background-image: url(images/dreambean.png);
     @media (max-width: 800px) {
         background-position: center;
     }
     h2 {
-        font-size: 2.5rem;
-        color: #fff;
+        font-size: 1.7rem;
+        letter-spacing: .7rem;
+        color: #000;
         text-align: center;
-        text-shadow: 1px 1px 0 #000;
         margin: 0;
-        padding-top: 1rem;
+        padding: 2rem;
         font-family: $body;
-        // font-style: italic;
-        text-transform: none;
-        @media (max-width: 800px) {
-            font-size: 2rem;
+        @media(max-width: 1097px) {
+            line-height: 3rem;
         }
-        @media (max-width: 560px) {
-
+        @media (max-width: 800px) {
+            font-size: 1.3rem;
+        }
+        @media (max-width: 590px) {
+            padding: 4rem 0 0 0;
+            line-height: 2rem;
+            font-size: 1rem;
         } 
         span {
             background-color: $tealcolor;
-            color: #fff;
+            color: $offwhite;
             padding: .5rem;
             font-weight: bold;
         }
@@ -65,26 +69,36 @@ header {
             }
         }
         h1 {
-            font-size: 10rem;
-            text-shadow: 1px 1px 2px #000;
+            background: url(images/teal.jpg) repeat ;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 14rem;
             text-transform: uppercase;
             font-weight: 500;
             letter-spacing: 1rem;
-            color: #fff;
             margin: 0;
             font-family: $font;
             padding-left: 2rem;
-            // font-family: $title2;
-            @media(max-width: 800px) {
-                font-size: 9rem;
+            @media(max-width: 1170px) {
+                font-size: 12rem;
             }
-            @media (max-width: 732px) {
-                font-size: 7rem;
+            @media (max-width: 1045px) {
+                font-size: 10rem;
             }
-            @media (max-width: 590px) {
-                font-size: 6rem;
+            @media (max-width: 800px) {
+                font-size: 13rem;
                 text-align: center;
+                 padding-left: 0;
              }   
+             @media(max-width: 530px) {
+                font-size: 10rem;
+             }
+             @media(max-width: 375px) {
+                font-size: 8rem;
+             }
+             @media (max-width: 320px) {
+                font-size: 7rem;
+             }
           }
       }
 }
@@ -104,6 +118,7 @@ header {
 	padding: 1rem 0;
 	width: 100%;
     z-index: 9998;
+    visibility: hidden;
     @media (max-width: 650px ) {
         display: none;
     }
@@ -113,6 +128,7 @@ header {
 .sticky {
     position: fixed;
     display: block;
+    visibility: visible;
     width: 12%;
     left: 2rem;
     top: 13rem;

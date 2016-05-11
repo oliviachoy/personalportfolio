@@ -21,7 +21,7 @@
 			}
 			.skillIcons {
 				display: flex;
-				justify-content: space-between;
+				justify-content: space-around;
 				align-items: center;
 				padding: 6rem 0;
 				flex-wrap: wrap;
@@ -33,7 +33,7 @@
 					flex-direction: column;
 					align-items: center;
 					flex-wrap: wrap;
-					width: 25%;
+					width: 20%;
 					i {
 						font-size: 5rem;
 					}

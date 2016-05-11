@@ -4,7 +4,8 @@
 <div class="sitewrapper">
 	<div class="main">
 	<!-- HEADER SECTION -->
-		<header style="background-image: url('<?php the_field('hero_image'); ?>');">
+	<!-- 	<header style="background-image: url('<?php the_field('hero_image'); ?>');"> -->
+			<header>
 	 		<div class="container">
 	 			<div class="content2">
 			    	<div class="heroInfo">
@@ -13,7 +14,7 @@
 						<!-- <p class="hiddenMenu">Menu</p> -->
 					     <h1><?php bloginfo( 'name' ); ?></h1>
 					</div>
-						 <h2><?php bloginfo('description'); ?> I Enjoy <span class="rotate"> Coding, Learning, Traveling, Exploring, Designing, Challenges, Projects, New Ideas,  New Experiences,  Laughing,  Eating,  Collaborating, Sharing Ideas </span>.</h2>
+						 <h2><?php bloginfo('description'); ?> I Enjoy <span class="rotate"> Coding, Learning, Traveling, Exploring, Designing, Challenges, Projects, New Ideas,  New Experiences,  Laughing,  Eating,  Collaborating, Sharing Ideas </span></h2>
 					<div class="navContainer">
 					    <?php wp_nav_menu( array(
 					      'container' => false,
@@ -53,30 +54,43 @@
 				<h2>
 					<?php the_field('skills_title');?>
 				</h2>
-				<div class="content skillSection">
-					<div class="skillsContainer">
-						<div class="skillIcons">
-							<?php if( have_rows('skill-icons')): ?>
-							<?php while( have_rows('skill-icons')): the_row(); ?>
-							<div class="icons">
-								<i class="<?php the_sub_field('icon')?>"></i>
-								<p class="caption">
-									<?php the_sub_field('caption')?>
+			<div class="content skillSection">
+				<div class="skillsContainer">
+					<div class="skillIcons">
+						<?php if( have_rows('skill-icons')): ?>
+						<?php while( have_rows('skill-icons')): the_row(); ?>
+						<div class="icons">
+							<i class="<?php the_sub_field('icon')?>"></i>
+							<p class="caption">
+								<?php the_sub_field('caption')?>
+							</p>
+						</div>
+						<?php endwhile; ?>
+						<?php endif; ?>
+					</div>	
+				</div> <!-- skllls container-->
+			</div> <!--container-->
+			</section>
+			<!-- SERVICE SECTION -->
+			<section class="service" id="services">
+				<div class="container">
+					<div class="content">
+							<h2><?php the_field('service_title') ?></h2>
+						<div class="serviceFlex">
+							<?php if( have_rows('service_icons')): ?>
+							<?php while( have_rows('service_icons')): the_row(); ?>
+							<div class="serviceInfo">
+								<?php the_sub_field('service_pic')?>
+								<p class="serviceCaption">
+									<?php the_sub_field('service_description')?>
 								</p>
 							</div>
 							<?php endwhile; ?>
 							<?php endif; ?>
-						</div>	
+						</div> <!-- serviceFlex-->
 					</div>
-				</div>
-				<section class="service">
-					<div class="content">
-						<h2><?php the_field('service_title') ?></h2>
-							<?php the_field('service_description') ?>
-					</div>
-				</section>
-			</div>
-		</section>
+				</div> <!--container-->
+			</section>
 	<!-- PORTFOLIO SECTION -->
 		<section class="portfolioSection" id="portfolio">
 			<div class="container">
@@ -117,13 +131,13 @@
 					<div class="contactIcons">
 						<?php if( have_rows('contact_icons')): ?>
 						<?php while( have_rows('contact_icons')): the_row(); ?>
-							<div class="contactCaption">
-								<p><?php the_sub_field('info') ?></p>
-								<p class="contactLinks">
-									<?php the_sub_field('icon') ?> 
-									<a href="<?php the_sub_field('contact_link') ?>"><?php the_sub_field('caption')?></a>
-								</p>
-							</div>
+						<div class="contactCaption">
+							<p><?php the_sub_field('info') ?></p>
+							<p class="contactLinks">
+								<?php the_sub_field('icon') ?> 
+								<a href="<?php the_sub_field('contact_link')?>" target="_blank"><?php the_sub_field('caption')?></a>
+							</p>
+						</div>
 						<?php endwhile; ?>
 						<?php endif; ?>
 					</div>

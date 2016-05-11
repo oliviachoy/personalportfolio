@@ -14,6 +14,12 @@ app.sScroll = function(){
 		}, 1000);
 	});
 
+	$('#menu-item-136 a').on('click', function (){
+		$('html, body').animate ({
+			scrollTop: $("#services").offset().top
+		}, 1000);
+	});
+
 	$('#menu-item-70 a').on('click', function (){
 		$('html, body').animate ({
 			scrollTop: $("#portfolio").offset().top
@@ -70,10 +76,10 @@ app.spin = function(){
 
 // start of code for scroll reveal 
 app.reveal = function(){
-	window.sr = ScrollReveal({ reset: true});
-		sr.reveal('.aboutImage', { duration: 1500, scale: 0.5});
+	window.sr = ScrollReveal({ reset: false});
 		sr.reveal('.icons', { duration: 1500, scale: 0.3});
-		// sr.reveal('.portfolioDescription', {duration:1500, scale: 0.3});
+		sr.reveal('.serviceCaption', {duration:1500, scale: 0.7});
+		sr.reveal('.portImage', {duration:1500, scale: 0.7});
 		sr.reveal('.contactCaption', {duration: 1000});	
 }; // end of code for scroll reveal 
 
